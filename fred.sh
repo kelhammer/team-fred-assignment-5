@@ -41,5 +41,24 @@ STRING=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 # generate date
 DATE=$(date +"%m-%d-%Y" )
 
-#append data to .csv file
-echo "$NAME, $COLOR, $AGE, $MOVIE, $HAIR, $STRING, $DATE" >> fred.csv
+echo "My SQL Username:"
+read USERNAME
+
+echo "MySQL Password:"
+read PASS
+
+mysql-ctl start
+
+mysql -u $USERNAME -p$PASS -e "INSERT INTO tblIntro (ID, Name, Color, Age, Movie, Hair, Date)
+                       VALUES
+                       ('$STRING', '$NAME', '$COLOR', '$AGE', '$MOVIE', '$HAIR', '$DATE');" fred
+
+echo "Done with SQL"
+
+mysqldump -u $USERNAME -p$PASS fred < fred.sql
+
+
+
+# echo -ne "\n"
+# append data to .csv file
+# echo "$NAME, $COLOR, $AGE, $MOVIE, $HAIR, $STRING, $DATE" >> fred.csv
