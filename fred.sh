@@ -47,7 +47,9 @@ read USERNAME
 echo "MySQL Password:"
 read PASS
 
-mysql-ctl start
+mysql-ctl start 
+
+use fred
 
 mysql -u $USERNAME -p$PASS -e "INSERT INTO tblIntro (ID, Name, Color, Age, Movie, Hair, Date)
                        VALUES
@@ -55,7 +57,7 @@ mysql -u $USERNAME -p$PASS -e "INSERT INTO tblIntro (ID, Name, Color, Age, Movie
 
 echo "Done with SQL"
 
-mysqldump -u $USERNAME -p$PASS fred < fred.sql
+mysqldump -u $USERNAME -p$PASS fred > fred.sql
 
 
 
