@@ -4,6 +4,8 @@ Hi there.
 
 Before running our script, please type the following into the command line:
 
+---
+
 mysql-ctl cli
 
 CREATE DATABASE fred;
@@ -19,6 +21,13 @@ CREATE TABLE tblIntro (ID VARCHAR(255),
                        Date DATE);
                        
 
+quit
+
+./fred.sh
+
+---
+
 When the command line prompts you to "Enter password:" just hit the ENTER key.
+You may have to hit ENTER more than once.
 
 Thanks! :)

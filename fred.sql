@@ -39,7 +39,7 @@ CREATE TABLE `tblIntro` (
 
 LOCK TABLES `tblIntro` WRITE;
 /*!40000 ALTER TABLE `tblIntro` DISABLE KEYS */;
-INSERT INTO `tblIntro` VALUES ('Dv9wkryvdMb5anhe7vwNgPluzeP9ALpN','Uriel','Blue',19,'Intersteller','Black','0000-00-00'),('yu31IVojMa02oDZsvrwEvmkOYZj4Kvnc','Fred','Orange',48,'Fred','Orange','0000-00-00'),('XJa7lyP98zv85d5gCd0lCdAJ6bTsIAAl','Panther','Black',45,'Gravity','Green','0000-00-00'),('OhjhU38iGGbDJu89x7F5XTFrCu8uDEfl','Uriel','Blue',19,'gravity','black','0000-00-00'),('cRB52sxHbOkmffdo4HpVX2berdJce2H7','Tabitha','red',26,'Cloud Atlas','blonde','0000-00-00'),('YSMfX3LKsjj4MgBXQ3nIn8GgYmBmTazd','Harry','Green',11,'HP and the Deathly Hallows','brown','0000-00-00');
+INSERT INTO `tblIntro` VALUES ('Dv9wkryvdMb5anhe7vwNgPluzeP9ALpN','Uriel','Blue',19,'Intersteller','Black','0000-00-00'),('yu31IVojMa02oDZsvrwEvmkOYZj4Kvnc','Fred','Orange',48,'Fred','Orange','0000-00-00'),('XJa7lyP98zv85d5gCd0lCdAJ6bTsIAAl','Panther','Black',45,'Gravity','Green','0000-00-00'),('OhjhU38iGGbDJu89x7F5XTFrCu8uDEfl','Uriel','Blue',19,'gravity','black','0000-00-00'),('cRB52sxHbOkmffdo4HpVX2berdJce2H7','Tabitha','red',26,'Cloud Atlas','blonde','0000-00-00'),('YSMfX3LKsjj4MgBXQ3nIn8GgYmBmTazd','Harry','Green',11,'HP and the Deathly Hallows','brown','0000-00-00'),('GAuTpr6k6GmFNc9z0alHT7OwGjuBxgpe','Kelsey','Blue',23,'Casablanca','Burnette','0000-00-00'),('1sodc3nqZxcrndDJE4pvhK73Q2ViBasz','Paul','orange',21,'Once','red','0000-00-00');
 /*!40000 ALTER TABLE `tblIntro` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -52,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-11-16 23:26:12
+-- Dump completed on 2016-11-16 23:36:47
