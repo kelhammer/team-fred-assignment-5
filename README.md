@@ -19,4 +19,6 @@ CREATE TABLE tblIntro (ID VARCHAR(255),
                        Date DATE);
                        
 
+When the command line prompts you to "Enter password:" just hit the ENTER key.
+
 Thanks! :)
