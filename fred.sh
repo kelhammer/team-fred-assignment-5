@@ -47,9 +47,7 @@ read USERNAME
 echo "MySQL Password:"
 read PASS
 
-mysql-ctl start 
-
-use fred
+mysql -u $USERNAME -p fred < fred.sql
 
 mysql -u $USERNAME -p$PASS -e "INSERT INTO tblIntro (ID, Name, Color, Age, Movie, Hair, Date)
                        VALUES
@@ -60,7 +58,7 @@ echo "Done with SQL"
 mysqldump -u $USERNAME -p$PASS fred > fred.sql
 
 
-
-# echo -ne "\n"
+# need to load database: fred
+# enter problem?
 # append data to .csv file
 # echo "$NAME, $COLOR, $AGE, $MOVIE, $HAIR, $STRING, $DATE" >> fred.csv
